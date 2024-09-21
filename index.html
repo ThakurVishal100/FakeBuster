@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Authentication System</title>
+</head>
+<body>
+    <h1>Face Authentication System</h1>
+    <div id="gradio-interface"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@gradio/inputs@2.0.9/dist/gradio.inputs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@gradio/outputs@2.0.9/dist/gradio.outputs.min.js"></script>
+    <script>
+        gr.Interface.url('http://localhost:5000').auto().load();
+    </script>
+</body>
+</html>
